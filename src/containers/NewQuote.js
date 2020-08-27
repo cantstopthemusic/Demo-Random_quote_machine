@@ -5,10 +5,11 @@ import { newQuote } from "../reducers/QuoteReducer";
 const mapDispatchToProps = (dispatch) => {
   return {
     onUpdateQuote: (num) => {
-      // dispatch({ type: "NEW_QUOTE", index: num });
       dispatch(newQuote(num));
     },
   };
 };
-
-export default connect(null, mapDispatchToProps)(NewQuote);
+const mapStateToProps = (state) => {
+  return { index: state };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(NewQuote);

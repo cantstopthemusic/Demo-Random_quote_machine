@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 export default class Text extends Component {
-  static propTypes = {
-    index: PropTypes.number,
-  };
   render() {
-    return <h1>{this.props.index}</h1>;
+    return (
+      <div className="content">
+        <p className="quote">{this.props.text}</p>
+        <p className="author">{this.props.author}</p>
+      </div>
+    );
   }
 }

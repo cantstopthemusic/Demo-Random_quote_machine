@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Text from "../components/Text";
+import Tweet from "../components/Tweet";
 
 const mapStateToProps = (state) => {
   return {
@@ -8,4 +8,4 @@ const mapStateToProps = (state) => {
     text: state.text,
   };
 };
-export default connect(mapStateToProps)(Text);
+export default connect(mapStateToProps)(Tweet);

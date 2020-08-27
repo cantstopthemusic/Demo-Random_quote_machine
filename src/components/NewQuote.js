@@ -13,8 +13,13 @@ export default class NewQuote extends Component {
   render() {
     return (
       <div id="new-quote">
-        <button onClick={this.handleNewQuote.bind(this, 15)}>
-          new quote set to 15
+        <button
+          onClick={this.handleNewQuote.bind(
+            this,
+            Math.floor(Math.random() * 102 + 1)
+          )}
+        >
+          new quote
         </button>
       </div>
     );
