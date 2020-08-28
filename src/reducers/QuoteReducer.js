@@ -473,8 +473,8 @@ export default function (state, action) {
   if (!state) {
     state = {
       index: 0,
-      text: memory[Math.floor(Math.random() * 102 + 1)].quote,
-      author: memory[Math.floor(Math.random() * 102 + 1)].author,
+      text: memory[Math.floor(Math.random() * 102)].quote,
+      author: memory[Math.floor(Math.random() * 102)].author,
     };
   }
   switch (action.type) {

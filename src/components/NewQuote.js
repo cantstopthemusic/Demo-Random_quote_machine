@@ -12,16 +12,15 @@ export default class NewQuote extends Component {
   }
   render() {
     return (
-      <div id="new-quote">
-        <button
-          onClick={this.handleNewQuote.bind(
-            this,
-            Math.floor(Math.random() * 102 + 1)
-          )}
-        >
-          new quote
-        </button>
-      </div>
+      <button
+        className="getNew"
+        onClick={this.handleNewQuote.bind(
+          this,
+          Math.floor(Math.random() * 102 + 1)
+        )}
+      >
+        New Quote
+      </button>
     );
   }
 }

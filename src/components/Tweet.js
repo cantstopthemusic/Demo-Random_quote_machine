@@ -9,8 +9,8 @@ export default class Tweet extends Component {
   }
   render() {
     return (
-      <button onClick={this.handleClickTweet.bind(this)}>
-        Tweet this quote!
+      <button className="tweet" onClick={this.handleClickTweet.bind(this)}>
+        TWEET
       </button>
     );
   }

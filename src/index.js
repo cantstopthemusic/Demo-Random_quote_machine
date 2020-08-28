@@ -9,11 +9,20 @@ import Tweet from "./containers/Tweet";
 import "./index.css";
 
 const store = createStore(quotesReducer);
-
 class Index extends Component {
+  componentDidMount() {
+    const script = document.createElement("script");
+    script.src = "https://use.fontawesome.com/6c9a9c3b14.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }
   render() {
     return (
-      <div className="index">
+      <div className="quote-box">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+          rel="stylesheet"
+        ></link>
         <Text />
         <NewQuote />
         <Tweet />
