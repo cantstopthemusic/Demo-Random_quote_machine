@@ -1,6 +1,6 @@
 ## 基于React的一个小demo，题目来自于Fcc。
 ### 演示GIF如下：
-
+![Quote Display](quote-animation.gif "Quote Display")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
